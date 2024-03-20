@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oferta God of War</title>
+    <style>
+      body {
+        background-color: black;
+        /* Como todos, o casi todos, los texto van en blanco y
+        con ese tipo de letra, lo hacemos en el body.
+        Lo mismo con la alienación de los textos */
+        color: white;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        text-align: center;
+      }
+      main {
+        width: 70%;
+        /* Para centrarlo verticalmente. En realidad basta con poner a auto
+            el margen izquierdo y derecho */
+        margin: auto;
+      }
+      main img {
+        /* Hacemos que la imagen ocupe un 100% de su contenedor, con lo que se
+            adapta al tamaño de este */
+        width: 100%;
+      }
+      section h2 {
+        color: darkred;
+      }
+      .video {
+        /* 60% de su contenedor y el main ya era un 70% del body */
+        width: 60%;
+      }
+      .logo {
+        width: 40%;
+      }
+      #ventajas {
+        margin-top: 6em;
+      }
+      /* Creamos una clase para las tres columnas */
+      .columnas3 {
+        width: 30%;
+        /* Para poner unas columnas una al lado de otra */
+        display: inline-block;
+        padding-top: 150px;
+        margin-top: 60px;
+        /* Estas tres opciones de background son comunes a todas las columnas */
+        background-repeat: no-repeat;
+        background-size: 50%;
+        /* Colocamos la imagen de fondo arriba y centrada horizontalmente */
+        background-position: top center;
+      }
+      /* Cada columna debe tener una imagen diferente */
+      /* nth-child(1) indica la primera columna que sea hija.
+       Si dejamos un espacio antes del :, sería el primer hijo de .columnas3 */
+      .columnas3:nth-child(1) {
+        background-image: url(imagenes/porque1.png);
+      }
+      .columnas3:nth-child(2) {
+        background-image: url(imagenes/porque2.png);
+      }
+      .columnas3:nth-child(3) {
+        background-image: url(imagenes/porque3.png);
+      }
+      footer {
+        width: 50%;
+        text-align: center;
+        color: darkgray;
+        font-size: x-small;
+        margin: auto;
+        /* Este debemos hacerlo después del anterior, ya que si no
+        se perdería este cambio, al volver a poner todos los márgenes
+        a auto */
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <img src="imagenes/godofwar.jpeg" alt="" />
+      <section>
+        <h2>Enter the Norse realm</h2>
+        <p>
+          His vengeance against the Gods of Olympus years behind him, Kratos now
+          lives as a man in the realm of Norse Gods and monsters. It is in this
+          harsh, unforgiving world that he must fight to survive… and teach his
+          son to do the same.
+        </p>
+        <img src="imagenes/video1.gif" class="video" alt="" />
+      </section>
+      <section>
+        <h2>Journey to a dark, elemental world of fearsome creatures</h2>
+        <p>
+          From the marble and columns of ornate Olympus to the gritty forests,
+          mountains and caves of pre-Viking Norse lore, this is a distinctly new
+          realm with its own pantheon of creatures, monsters and gods.
+        </p>
+        <img src="imagenes/video2.gif" class="video" alt="" />
+      </section>
+      <section id="ventajas">
+        <div><img src="imagenes/logo.png" alt="logo gog" class="logo" /></div>
+        <div class="fila">
+          <div class="columnas3">Play your games offline</div>
+          <div class="columnas3">Up to 30 days refund</div>
+          <div class="columnas3">Classics preservation</div>
+        </div>
+      </section>
+      <footer>
+        <p>
+          You can unsubscribe if you prefer not to receive newsletters from us.
+          You’re receiving this email because your address is on our subscriber
+          list. This email is for information purposes only and does not
+          constitute an offer. Specific pricing and discounts may be subject to
+          change.
+        </p>
+        <p>
+          º Visit GOG.COM for details on individual offers. GOG.COM © GOG sp. z
+          o.o., ul. Jagiellońska 74, 03-301 Warsaw, Poland. Part of CD PROJEKT
+          group. All rights reserved. All trademarks are property of their
+          respective owners.
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
